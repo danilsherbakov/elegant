@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacts</title>
+
+	<link rel="preload" href="css/style.min.css" as="style">
+	<link rel="preload" href="js/main.min.js" as="script">
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	
+	<div class="first-screen">
+		<div class="first-screen__wrapper" style="background-image: url('images/contact-header.jpg')">
+			<header class="header">
+				<div class="header__wrapper">
+					<div class="header__logo">
+						<a class="header__logo-link" href="index.html">
+							<img class="header__logo-img" src="images/cd-logo.png" alt="shit happens">
+						</a>		
+					</div>
+					<div class="header__burger">
+						<span class="header__menu">menu</span>
+						<span class="header__burger-line"></span>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="menu__wrapper menu-hidden">
+						<div class="header__burger">
+							<span class="header__menu">menu</span>
+							<span class="header__burger-line"></span>
+						</div>
+						<nav class="menu__nav">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+								<li class="menu__item"><a href="work.html" class="menu__link">Work</a></li>
+								<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+								<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+
+	<main class="main">
+		<div class="contact-us">
+			<div class="container">
+				<h3 class="contact-us__upper-title upper-title">
+					This is it!
+				</h3>
+				<h2 class="contact-us__title title">
+					Contact us
+				</h2>
+				<div class="contact-us__block">
+					<div class="contact-us__address contact-us__part">
+						Rua Serpa Pinto, Lisbon, Portugal
+					</div>
+					<div class="contact-us__address-img contact-us__part">
+						<img src="images/contact-houses.jpg" alt="">
+					</div>
+					<div class="contact-us__text contact-us__part">
+						Good design as little design as possible. Good design is to chance. My goal is making something memorable and especially the consumer. Good design is aesthetic. Care and aesthetic. Good design emphasises the consumer. It does not only functional.
+					</div>
+					<div class="contact-us__phone contact-us__part">
+						+88 (0) 101 0000 000 
+						<br class="contact-us__break">
+						+88 (0) 101 0000 000
+					</div>
+				</div>
+				<a class = "popup-form" href="#contact-form"><div class="contact-us__button button">
+					Shote us an Email
+				</div></a>
+				<form class="contact-form mfp-hide popup-form__block" id="contact-form">
+					<h4 class="popup-form__title">Contact Us</h4>
+					<ul class = "popup-form__wrapper">
+						<li class = "popup-form__element">
+							<label class = "popup-form__label" for="name">Name:</label><br>
+							<input class = "popup-form__input popup-form__name" id="name" name="name" type="text" placeholder="Name" required="">
+						</li>
+						<li class = "popup-form__element">
+							<label class = "popup-form__label" for="email">Email:</label><br>
+							<input class = "popup-form__input popup-form__email" id="email" name="email" type="email" placeholder="example@domain.com" required="">
+						</li>
+						<li class = "popup-form__element">
+							<label class = "popup-form__label" for="phone">Phone:</label><br>
+							<input class = "popup-form__input popup-form__phone" id="phone" name="phone" type="tel" placeholder="Eg. +447500000000" required="">
+						</li>
+						<li class = "popup-form__element">
+							<label class = "popup-form__label" for="textarea">Message:</label><br>
+							<textarea class = "popup-form__input popup-form__text" id="textarea">Your message</textarea>
+						</li>
+					</ul>
+					<button class="popup-form__button" type="submit" form = contact-form>Send</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__wrapper">
+			<div class="container">
+				<div class="footer__inner-wrapper">
+					<div class="footer__copyright">© 2014 Designed and Developed by Diogo Dantas</div>
+					<a class="footer__email" href="imdiogodantas@gmail.com">Email: imdiogodantas@gmail.com</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src = "js/main.min.js"></script>
+</body>
+</html>
